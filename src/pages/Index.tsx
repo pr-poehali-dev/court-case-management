@@ -153,9 +153,14 @@ const Index = () => {
                 <p className="text-sm opacity-90 mt-1">Нижегородская обл., г. Южный, пр-кт Победы, д. 3</p>
               </div>
             </div>
-            <Badge variant="outline" className="bg-accent text-accent-foreground border-0 text-lg px-4 py-2">
-              Motion Project 2025
-            </Badge>
+            <Button
+              variant="outline"
+              className="bg-accent text-accent-foreground border-0 hover:bg-accent/90"
+              onClick={() => window.location.href = '/admin'}
+            >
+              <Icon name="Shield" size={20} className="mr-2" />
+              Админ-панель
+            </Button>
           </div>
         </div>
       </header>
